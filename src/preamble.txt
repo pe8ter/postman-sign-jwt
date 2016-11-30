@@ -1,0 +1,10 @@
+
+defineJWTSigner();
+
+var bearerTokenSecret = 'secret';
+var bearerTokenPayload = {
+    // Token properties go here.
+};
+
+var bearerToken = jwt.sign(bearerTokenPayload, bearerTokenSecret, { noTimestamp: true });
+postman.setEnvironmentVariable('bearerToken', bearerToken);

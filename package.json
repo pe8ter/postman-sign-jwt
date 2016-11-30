@@ -1,0 +1,30 @@
+{
+  "name": "postman-sign-jwt",
+  "version": "1.0.0",
+  "description": "Build a script that signs JSON Web Tokens in Postman.",
+  "author": "Peter Safranek <pe8ter@mac.com> (http://pe8ter.com)",
+  "license": "SEE LICENSE IN LICENSE.md",
+  "private": true,
+  "homepage": "https://github.com/pe8ter/postman-sign-jwt#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pe8ter/postman-sign-jwt.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pe8ter/postman-sign-jwt/issues"
+  },
+  "keywords": [
+    "jwt",
+    "jsonwebtoken"
+  ],
+  "scripts": {
+    "start": "./build.sh"
+  },
+  "dependencies": {
+    "jsonwebtoken": "^7.1.9"
+  },
+  "devDependencies": {
+    "browserify": "^13.1.1",
+    "uglify-js": "^2.7.4"
+  }
+}

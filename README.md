@@ -23,4 +23,4 @@ If you're on macOS copy the script to the Clipboard with this Terminal command:
 pbcopy < dist/pre-request-script.js
 ```
 
-Over in the **Headers** panel, add an header key `Authorization` whose value is `Bearer {{bearerToken}}`.
+Over in the **Headers** panel, add a header key `Authorization` whose value is `Bearer {{bearerToken}}`.

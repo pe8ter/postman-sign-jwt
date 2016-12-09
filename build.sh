@@ -26,5 +26,9 @@ cat $SRC/main-prefix.txt $TEMP/main.bundle.js $SRC/main-suffix.txt > $TEMP/main.
 # Minify.
 $UGLIFY --compress --mangle -- $TEMP/main.bundle.wrapped.js > $TEMP/main.bundle.wrapped.min.js
 
+# Make a file that has an extra space in it.
+touch $TEMP/space.txt
+echo >> $TEMP/space.txt
+
 # Prepend the setup code.
-cat $SRC/preamble.txt $TEMP/main.bundle.wrapped.min.js > $DIST/pre-request-script.js
+cat $SRC/preamble.txt $TEMP/space.txt $TEMP/main.bundle.wrapped.min.js > $DIST/pre-request-script.js
